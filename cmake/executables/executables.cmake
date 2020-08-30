@@ -10,6 +10,7 @@ set(SOURCES
 )
 
 set(HEADERS
+        ${INCLUDE_DIR}/ip_print.h
 )
 
 # Add executables
