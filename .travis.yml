@@ -19,8 +19,7 @@ script:
 - git rm -rf *
 - mv -v ../../html/* .
 - git add .
-- git commit -m "Documentation from travis-ci build $TRAVIS_BUILD_NUMBER"
-- git push https://boristestov:$GITHUB_TOKEN@github.com/boristestov/ip_print.github.io.git
+- git commit -m "Documentation from travis-ci build $TRAVIS_BUILD_NUMBER" && git push https://boristestov:$GITHUB_TOKEN@github.com/boristestov/ip_print.github.io.git || echo "Nothing to commit"
 - cd ..
 - sudo rm -rf ip_print.github.io
 deploy:
