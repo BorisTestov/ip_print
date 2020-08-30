@@ -17,7 +17,7 @@ script:
 - doxygen doxyfile.conf
 - git clone https://boristestov:$GITHUB_TOKEN@github.com/boristestov/ip_print.github.io.git
 - cd ip_print.github.io
-- git rm -r *
+- git rm -rf *
 - mv -v ../html/* .
 - git add *
 - git commit -m "Documentation from travis-ci build $TRAVIS_BUILD_NUMBER"
