@@ -13,6 +13,7 @@ script:
 - cmake --build .
 - make test
 - cmake --build . --target package
+- cd ..
 - doxygen doxyfile.conf
 - git clone https://boristestov:$GITHUB_TOKEN@github.com/boristestov/ip_print.github.io.git
 - cd ip_print.github.io
